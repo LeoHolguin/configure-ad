@@ -32,18 +32,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="319" alt="image" src="https://github.com/LeoHolguin/configure-ad/assets/138087728/67c73e0a-a70e-4a59-8bbb-ea100d686395">
+<img width="428" alt="image" src="https://github.com/LeoHolguin/configure-ad/assets/138087728/272c3375-03ac-4006-a5d7-ede1499f05ee">
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+First, we are going to create two virtual machines in Azure. Our first VM is going to be a domain controller which we are going to install an active directory and the second VM is going to be a client. Now we are going into the network settings for DC-1 and changing its ip status to static.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="306" alt="image" src="https://github.com/LeoHolguin/configure-ad/assets/138087728/23cfb389-7f6d-4b61-a2fd-1f75b45639e7">
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Since we are on Windows, we are going to use the remote desktop protocol to connect to our virtual machines.
 </p>
 <br />
 
