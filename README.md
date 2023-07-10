@@ -6,16 +6,11 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How to Deploy on-premises Active Directory within Azure Compute](https://www.youtube.com)
-
-<h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Active Directory Domain Services
-- PowerShell
+
 
 <h2>Operating Systems Used </h2>
 
@@ -24,8 +19,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Virtual Machins in Azure
-- Remote Desktop Protocol and Installing Active Directory
+- Creating Virtual Machins in Azure
+- Use Remote Desktop Protocol and Installing Active Directory
 - Finalizing Active Directory
   
 
@@ -49,8 +44,8 @@ First, we are going to create two virtual machines in Azure. Our first VM is goi
 
 </p>
 <p>
-Since we are on Windows, we are going to use the remote desktop protocol to connect to our virtual machines. Now we are firdt going to login to our Domain controller and install active directory. We are going to open service manager and click on a add roles and features, click next until you can check off active directory domain services, and click on install.
-</p>s
+Since we are on Windows, we are going to use the remote desktop protocol to connect to our virtual machines. Now we are first going to log in to our Domain controller and install the active directory. We are going to open service manager and click on add roles and features, click next until you can check off active directory domain services, and click on install.
+</p>
 <br />
 
 <p>
@@ -61,7 +56,7 @@ Since we are on Windows, we are going to use the remote desktop protocol to conn
 
 </p>
 <p>
-On the top right we are seeing a flag with a explanation point, click on it and to finalize installing active direcotry and turn the server into a domain controller. We are going to add a new forest with a the root name being mydomain.com and click intall when we are finish. Once its done install the computer is going to restart.
+On the top right we are seeing a flag with an exclamation point, click on it to finalize installing our active directory and turn the server into a domain controller. We are going to add a new forest with the root name mydomain.com and click install when we are finished. Once it's done install the computer is going to restart.
 </p>
 <br />
 <p>
@@ -73,6 +68,6 @@ On the top right we are seeing a flag with a explanation point, click on it and 
 
 </p>
 <p>
-Since we actaully changed this computetr to a domain controller we have to sign in by using the domain user we made. Finally, when we login to the domain controller we can check if we have succfeully intsalled active direcoty by going to service manager, click on tools and if we don everything right we should be able to see Active directoy user and computers. Perfect we installed active diretory and now if we want we can accounts and give them permissions.
+Since we changed this computer to a domain controller we have to sign in by using the domain user we made. Finally, when we log in to the domain controller we can check if we have successfully installed the active directory by going to the service manager, clicking on tools and if we have done everything right we should be able to see the Active directory user and computers. Congrats we successfully installed active directory and now if we want, we can create accounts and give them permissions.
 </p>
 <br />
